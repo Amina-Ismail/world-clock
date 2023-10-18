@@ -1,6 +1,7 @@
 body {
   background-color: #f9f7fe;
   font-family: sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/185/original/worldmap.jpg?1697638353");
 }
 
 select {
@@ -8,33 +9,42 @@ select {
   width: 100%;
   padding: 10px;
   font-size: 18px;
-
+  background-color: #a1c4fd;
   border-radius: 4px;
 }
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 48px;
+  font-family: "Times New Roman", Times, serif;
+  background-image: linear-gradient(135deg, #79f1a4 10%, #0e5cad 100%);
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 6px;
 }
 h2 {
   margin: 0 0 10px;
   font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   max-width: 600px;
-
-  background: white;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   margin: 60px auto;
+  opacity: 0.9;
 }
 .city {
   display: flex;
   margin: 20px 0;
   justify-content: space-between;
-  padding: 30px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 30px 10px;
+
+  background-image: linear-gradient(135deg, #79f1a4 10%, #0e5cad 100%);
+  opacity: 0.8;
+  border-radius: 6px;
 }
 .city:last-child {
   border: none;
@@ -53,7 +63,22 @@ h2 {
 }
 
 footer {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  max-width: 650px;
+  padding: 5px;
+  background-image: linear-gradient(135deg, #79f1a4 10%, #0e5cad 100%);
+  border-radius: 6px;
+  opacity: 0.9;
+}
+@media (max-width=700px) {
+  body .container {
+    width: 400px;
+  }
+
+  .cities {
+    display: grid;
+  }
 }
