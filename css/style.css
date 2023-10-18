@@ -73,12 +73,24 @@ footer {
   border-radius: 6px;
   opacity: 0.9;
 }
-@media (max-width=700px) {
-  body .container {
-    width: 400px;
+@media (max-width: 600px) {
+  body {
+    max-width: 500px;
   }
-
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 18px;
+  }
   .cities {
     display: grid;
+  }
+  .time {
+    font-size: 24px;
+    text-align: center;
+  }
+  .date {
+    font-size: 15px;
   }
 }
